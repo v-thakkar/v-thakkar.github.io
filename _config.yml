@@ -10,7 +10,7 @@ title: Vaishali Thakkar
 email: me@vaishalithakkar.com
 description: Freelance Linux Kernel Hacker and FOSS Program manager
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "vaishalithakkar.in/" # the base hostname & protocol for your site
+url: "vaishalithakkar.in" # the base hostname & protocol for your site
 twitter_username: kernel_girl
 github_username:  nerdyvaishali
 linkedin_username: vaishali-thakkar-411b3390
