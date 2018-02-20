@@ -1,0 +1,29 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-6">
+        <span class="site-description" style="color: #111;">Website inspired from <a href="http://github.com/hemangsk/Gravity">Gravity</a>
+        </span>
+      </div>
+
+      <div class="footer-col footer-col-6 md-offset-3 footer-content" style="float:right;">
+          {% if site.github_username %}
+            {% include icon-github.html username=site.github_username %}
+          {% endif %}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          {% if site.twitter_username %}
+            {% include icon-twitter.html username=site.twitter_username %}
+          {% endif %}
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          {% if site.linkedin_username %}
+            {% include icon-linkedin.html username=site.linkedin_username %}
+          {% endif %}
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
