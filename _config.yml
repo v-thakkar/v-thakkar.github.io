@@ -8,7 +8,7 @@
 # Site settings
 title: Vaishali Thakkar
 email: me@vaishalithakkar.com
-description: Freelance Linux Kernel Hacker and FOSS Program manager
+description: Freelance Linux Kernel Hacker and FOSS Program architect
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vaishalithakkar.in" # the base hostname & protocol for your site
 twitter_username: kernel_girl
