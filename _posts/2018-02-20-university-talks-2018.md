@@ -19,3 +19,13 @@ Nowadays when almost all major companies are using, supporting and contributing 
 So, if you are a university student and are interested in inviting me to speak at your university then you can email me at <a href="mailto: me@vaishalithakkar.in">me@vaishalithakkar.in</a>. <u>Note that currently I'm booking slots for the July, August and September month.</u> 
 
 Cheers!
+
+<u>Update (May 9, 2018):</u>
+
+For the transparency and to save our time, here are few points you(student or authorised university person) need to consider before inviting me to give a talk at your university.
+
+- I do not charge any fees for giving talks at universities in India. Often universities/tech fests have budget for speakers, so if you have it and you feel that I should be getting paid for that, please donate it to <a href="https://railsgirlssummerofcode.org/campaign/">RGSoC</a>.
+
+- As I don't have any tarvel sponsors, if giving a talk at your university requires me to travel from my current location (mostly Bangalore), you'll need to sponsor my trip and onsite expenses.
+
+- I am not a big fan of speaker gifts like memento or t-shirts or flowers. But I do appreciate the love behind it. So, if you want to give me anything as a speaker gift, you can check my <a href="https://www.amazon.in/gp/registry/wishlist/13NVETPGSJP48/ref=nav_wishlist_lists_1">amazon book wishlist.</a> (Note that this is not mandatory and this point is just to avoid collecting the things I already have)
