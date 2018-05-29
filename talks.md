@@ -8,8 +8,6 @@ tagline: "My speaking engagements"
 <br>
 # **2018**
 
-- June 16-17, 2018: GCC plugins and the Linux Kernel at [HongKong Open Source Conference, HongKong](https://hkoscon.org/2018/) (Upcoming)
-
 - March 17, 2018: Building a career in open source at [Avishkar Techfest, NIT Durgapur](https://www.facebook.com/aavishkar.nitd/) ([Slides](https://github.com/nerdyvaishali/Talks/blob/master/Building_a_career_in_open_source_NIT_Durgapur.pdf))
 
 
