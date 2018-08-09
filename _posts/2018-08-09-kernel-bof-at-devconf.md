@@ -31,7 +31,7 @@ Btw, I got a feedback from kernel newbies that this was the most interesting ses
 
 - **Reduce KVM guest memory footprint by Pankaj Gupta**
 
-I was glad that we had 10-15 minutes to talk about this topic as well. Pankaj mainly talk about the goal behind reducing KVM guest memory footprint, steps to achieve it and fake DAX flushing interface. Slides from the talk can be found [here](https://github.com/nerdyvaishali/Talks/blob/master/Kernel_BoF/DevConf_Blore_18.pdf) and you can also checkout RFC version of [patches for fake DAX flushing interface submitted by Pankaj in LKML](https://lkml.org/lkml/2018/7/13/102). 
+I was glad that we had 10-15 minutes to talk about this topic as well. Pankaj mainly talked about the goal behind reducing KVM guest memory footprint, steps to achieve it and fake DAX flushing interface. Slides from the talk can be found [here](https://github.com/nerdyvaishali/Talks/blob/master/Kernel_BoF/DevConf_Blore_18.pdf) and you can also checkout RFC version of [patches for fake DAX flushing interface submitted by Pankaj in LKML](https://lkml.org/lkml/2018/7/13/102). 
 
 I enjoyed hosting this and discussing bunch of topics with fellow kernel hackers, understanding the questions from kernelnewbies. I think we should do more semi structured sessions like this at conferences.
 
