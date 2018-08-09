@@ -39,4 +39,4 @@ I enjoyed hosting this and discussing bunch of topics with fellow kernel hackers
 
 **Trivia**
 
-We had to climb 8 floors to attend the BoF and all speakers had to sit on floor because by the time we reached at the room, it was full. I created twiiter moments for Kernel BoF [here](https://twitter.com/i/moments/1025779393350778882). :)
+We had to climb 8 floors to attend the BoF and all speakers had to sit on floor because by the time we reached at the room, it was full. I created twiiter moments of Kernel BoF [here](https://twitter.com/i/moments/1025779393350778882). :)
