@@ -35,7 +35,7 @@ I was glad that we had 10-15 minutes to talk about this topic as well. Pankaj ma
 
 I enjoyed hosting this and discussing bunch of topics with fellow kernel hackers, understanding the questions from kernelnewbies. I think we should do more semi structured sessions like this at conferences.
 
-**P.S:** I maintain a repository named Kernel Bridge [here](https://github.com/nerdyvaishali/kernelbridge) with bunch of TODOS from different Linux Kernel projects/subsystems. I do not keep track of who is working on what but I usually get lot of emails from people who are interested in contributing to the Linux Kernel so just having a single link helps. If you're a kernel developer and you have a task list for the subsystem/project you're working on, feel free to send PR or email me and I'll add it there.
+**P.S:** I maintain a repository named Kernel Bridge [here](https://github.com/nerdyvaishali/kernelbridge) with bunch of TODOs from different Linux Kernel projects/subsystems. I do not keep track of who is working on what but I usually get lot of emails from people who are interested in contributing to the Linux Kernel so just having a single link helps. If you're a kernel developer and you have a task list for the subsystem/project you're working on, feel free to send PR or email me and I'll add it there.
 
 **Trivia**
 
