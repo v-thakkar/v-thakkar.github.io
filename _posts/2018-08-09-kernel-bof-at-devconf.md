@@ -13,7 +13,7 @@ We had 2 hours and 15 minutes for the whole session and we were able to cover th
 
 We started with 25-30 minutes of talk by Amit on scheduling, mainly focusing on project EAS by Linaro. It was quite an interesting overview of covering history of scheduler, how project EAS started and the current status of project EAS. Here, are [slides](https://github.com/nerdyvaishali/Talks/blob/master/Kernel_BoF/A%20whirlwind%20tour%20of%20Energy-aware%20Scheduling%20%40%20Devconf.in.pdf) from Amit's talk and note that it also contains links to bunch of articles on the project and ongoing effort of mainlining bunch of features (from talks on the same at Linaro Connect).
 
-- **RISc-V workshop update by [Siddhesh Poyarekar](https://twitter.com/siddhesh_p)**
+- **RISC-V workshop update by [Siddhesh Poyarekar](https://twitter.com/siddhesh_p)**
 
 As you may know, RISC-V is a free and open ISA based on established RISC principles. There was a [RISC-V workshop](https://riscv.org/2018/07/risc-v-workshop-in-chennai-proceedings/) organized in IIT-Madras around Mid-July. Based on Atish Patra's talk at the RISC-V workshop, Siddhesh gave an update on the Kernel status for the same. Note that RISC-V support was added in kernel 4.15 version and you can find the introductory article on LWN here. Atish's talk from RISC-V workshop can be found [here](https://www.youtube.com/watch?v=6X6i0kcy3GA), do check it out as it contains lot of information about future plans and if you're someone looking for a way to start contributing to Linux Kernel, this can be something interesting. There is an IRC channel and mailing list too. 
 
@@ -35,7 +35,7 @@ I was glad that we had 10-15 minutes to talk about this topic as well. Pankaj ma
 
 I enjoyed hosting this and discussing bunch of topics with fellow kernel hackers, understanding the questions from kernelnewbies. I think we should do more semi structured sessions like this at conferences.
 
-P.S. I maintain a repository named Kernel Bridge here with bunch of ideas on finding tasks or TODOS for Linux Kernel. I do not keep track of who is working on what but I usually get lot of emails from people who are interested in contributing to the Linux Kernel so just having a single link helps. If you're a kernel developer and you have a task list for the subsystem/project you're working on, feel free to send PR or email me and I'll add it there.
+**P.S:** I maintain a repository named Kernel Bridge here with bunch of ideas on finding tasks or TODOS for Linux Kernel. I do not keep track of who is working on what but I usually get lot of emails from people who are interested in contributing to the Linux Kernel so just having a single link helps. If you're a kernel developer and you have a task list for the subsystem/project you're working on, feel free to send PR or email me and I'll add it there.
 
 **Trivia**
 
