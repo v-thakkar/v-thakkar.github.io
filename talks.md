@@ -13,7 +13,7 @@ tagline: "My speaking engagements"
 
 - August 30, 2018: Building a career in open source at GLS University in Ahmedabad (Upcoming)
 
-- August 4-5, 2018: Kernel BoF at [Devconf.in](https://devconf.info/in)
+- August 4-5, 2018: Kernel BoF at [Devconf.in](https://devconf.info/in) ([Slides](https://github.com/nerdyvaishali/Talks/tree/master/Kernel_BoF), [Blogpost](https://vaishalithakkar.in/other/2018/08/09/kernel-bof-at-devconf.html))
 
 - March 17, 2018: Building a career in open source at [Avishkar Techfest, NIT Durgapur](https://www.facebook.com/aavishkar.nitd/) ([Slides](https://github.com/nerdyvaishali/Talks/blob/master/Building_a_career_in_open_source_NIT_Durgapur.pdf))
 
