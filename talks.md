@@ -9,7 +9,11 @@ tagline: "My speaking engagements"
 
 # **2018**
 
-- August 30, 2018: Building a career in open source at GLS University in Ahmedabad (Upcoming)
+- October 22-14, 2018: [Outreachy Linux Kernel Internship report](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/program/schedule/) (Moderator) at [OSS, Europe](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/) (Upcoming)
+
+- September 26-28, 2018: [From Knowing the definition of Linux Kernel to becoming a kernel hacker](https://kernel-recipes.org/en/2018/talks/from-knowing-the-definition-of-linux-kernel-to-becoming-a-kernel-hacker/) at [Kernel Recipes](https://kernel-recipes.org/en/2018/) (Upcoming)
+
+- August 30, 2018: So You want to be a Kernel hacker at GLS University in Ahmedabad ([Slides](https://github.com/nerdyvaishali/Talks/blob/master/so_you_want-to_be_a_kernel_hacker.pdf))
 
 - August 4-5, 2018: Kernel BoF at [Devconf.in](https://devconf.info/in) ([Slides](https://github.com/nerdyvaishali/Talks/tree/master/Kernel_BoF), [Blogpost](https://vaishalithakkar.in/other/2018/08/09/kernel-bof-at-devconf.html))
 
