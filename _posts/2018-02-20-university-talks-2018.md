@@ -24,7 +24,7 @@ Cheers!
 
 For the transparency and to save our time, here are few points you(student or authorised university person) need to consider before inviting me to give a talk at your university.
 
-- I do not charge any fees for giving talks at universities in India. Often universities/tech fests have budget for speakers, so if you have it and you feel that I should be getting paid for that, please donate it to <a href="https://railsgirlssummerofcode.org/campaign/">RGSoC</a>.
+- I do not charge any fees for giving talks at universities in India. Often universities/tech fests have budget for speakers, so if you have it and you feel that I should be getting paid for that, please donate it to <a href="https://www.outreachy.org/sponsor/donate/">Outreachy</a>.
 
 - As I don't have any travel sponsors, if giving a talk at your university requires me to travel from my current location (mostly Bangalore), you'll need to sponsor my trip and onsite expenses.
 
