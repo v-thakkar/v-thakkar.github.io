@@ -9,9 +9,9 @@ tagline: "My speaking engagements"
 
 # **2018**
 
-- October 22-14, 2018: [Outreachy Linux Kernel Internship report](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/program/schedule/) (Moderator) at [OSS, Europe](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/) (Upcoming)
+- October 22-14, 2018: [Outreachy Linux Kernel Internship report](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/program/schedule/) (Moderator) at [OSS, Europe](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/) (Couldn't go)
 
-- September 26-28, 2018: [From Knowing the definition of Linux Kernel to becoming a kernel hacker](https://kernel-recipes.org/en/2018/talks/from-knowing-the-definition-of-linux-kernel-to-becoming-a-kernel-hacker/) at [Kernel Recipes](https://kernel-recipes.org/en/2018/) (Upcoming)
+- September 26-28, 2018: [From Knowing the definition of Linux Kernel to becoming a kernel hacker](https://kernel-recipes.org/en/2018/talks/from-knowing-the-definition-of-linux-kernel-to-becoming-a-kernel-hacker/) at [Kernel Recipes](https://kernel-recipes.org/en/2018/) ([Slides+Video](https://kernel-recipes.org/en/2018/talks/from-knowing-the-definition-of-linux-kernel-to-becoming-a-kernel-hacker/))
 
 - August 30, 2018: So You want to be a Kernel hacker at GLS University in Ahmedabad ([Slides](https://github.com/nerdyvaishali/Talks/blob/master/so_you_want-to_be_a_kernel_hacker.pdf))
 
