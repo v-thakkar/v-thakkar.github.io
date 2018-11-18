@@ -3,6 +3,7 @@ layout: page
 title: Media
 permalink: /media
 ---
+- September, 2018: [Collabora Chats @ Kernel Recipes 2018](https://www.youtube.com/watch?v=7LrwrPTPHD4&list=PLZjq3una5SrAF2d3N5Yzu1-9Z6LeNmwrE&index=8) by Collabora
 
 - January, 2018: Featured in an article under title '[Meet India's Women Open Source Warriors](https://factordaily.com/longform/meet-indias-women-open-source-warriors/)' by [Factordaily](https://factordaily.com/)
 
