@@ -6,7 +6,7 @@ permalink: /now
 
 ## What I'm doing now
 
-[Last Updated: November 12, 2018]
+[Last Updated: May, 2019]
 
 - Currently my paid time is divided between working with wonderful clients on Embedded Linux projects. So, I'm not looking for any paid work until the end of September, 2019.
 
