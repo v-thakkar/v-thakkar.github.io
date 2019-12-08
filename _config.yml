@@ -12,8 +12,8 @@ description: Freelance Linux Kernel Engineer and FOSS Community architect
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vaishalithakkar.in" # the base hostname & protocol for your site
 twitter_username: kernel_girl
-github_username:  nerdyvaishali
-linkedin_username: vaishali-thakkar-411b3390
+github_username:  v-thakkar
+linkedin_username: in/vaishali-thakkar-411b3390
 paginate: 5
 paginate_path: "blog/page:num/"
 theme-dark: false #Set to true to change to dark website theme
