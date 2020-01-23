@@ -6,9 +6,9 @@ permalink: /now
 
 ## What I'm doing now
 
-[Last Updated: September, 2019]
+[Last Updated: January, 2020]
 
-- Currently my paid time is divided between working with wonderful client(s) on Embedded Linux projects until the end of this year. I'm mostly planning to work for part-time during the last 3 months of a year. But I can be bit flexible for any interesting project. I enjoy working on Systems programming, Linux kernel, embedded Linux etc related projects. I've been quite interested in working on embedded Rust related projects recently so feel free to contact me if you think I would be a great fit to work on your related projects.
+- Starting from January 1 2020, I decided to take a little break from all the paid work. So, I'm not actively looking for any paid contarcts at the moment. But I enjoy working on Systems programming, Linux kernel, embedded Linux, embedded Rust etc related projects. If you think I would be a great fit to work on your project, feel free to contact me then. May be we can figure out some timeline to work together once I'm done with the break. 
 
 - I don't do any training for Linux Kernel, embedded Linux or related subjects at the moment. So, if you will contact me regarding the same, you may not get any response from me(unless we've known eachother personally before). If at any point, I'll decide to do that, the information will be available on this website. 
 
