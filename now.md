@@ -12,6 +12,6 @@ permalink: /now
 
 - I don't do any training for Linux Kernel, embedded Linux or related subjects at the moment. So, if you will contact me regarding the same, you may not get any response from me(unless we've known eachother personally before). If at any point, I'll decide to do that, the information will be available on this website. 
 
-- I usually update my tech and university speaking plans [here](http://vaishalithakkar.in/talks) (and occassionally announce it on twitter too). I love talking about embedded systems, Linux Kernel, embedded Rust and open source ecosystem/community. If you want me to speak at your conference in 2020, feel free to email me. Please note that from 2019, I no longer participate in 'women in tech/open source' panels or give talks on same. I prefer to be invited to take part in a panel or give a talk on above mentioned subjects. 
+- I usually update my tech and university speaking plans [here](http://vaishalithakkar.in/talks) (and occassionally announce it on twitter too). I love talking about embedded systems, Linux Kernel, embedded Rust and open source ecosystem/community. If you want me to speak at your conference in 2020, feel free to email me.
 
 
