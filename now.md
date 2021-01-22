@@ -6,13 +6,13 @@ permalink: /now
 
 ### This page lists my current areas of focus
 
-[Last Updated: June 13, 2020]
+[Last Updated: January 22, 2021]
 
-- Working on some super interesting open source projects
+- Mostly focusing on new job 
 
 - Learning German
 
-- Watching bunch of old technical talks presented at CCC conferences on firmware and security related things
+- Setting up life in Berlin
 
-- Reading Datapoint by Lamont Wood(non-fiction) and Delta-V by Daniel Suarez(fiction)
+- Entangled life by Merlin Sheldrake
 
