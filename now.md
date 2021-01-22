@@ -8,7 +8,7 @@ permalink: /now
 
 [Last Updated: January 22, 2021]
 
-- Mostly focusing on new job 
+- Mostly focusing on new job and related tech stuff
 
 - Learning German
 
