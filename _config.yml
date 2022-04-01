@@ -8,7 +8,7 @@
 # Site settings
 title: Vaishali Thakkar
 email: me@vaishalithakkar.com
-description: Linux Kernel Engineer and FOSS Community architect
+description: Software, systems and Linux kernel
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vaishalithakkar.in" # the base hostname & protocol for your site
 twitter_username: kernel_girl
