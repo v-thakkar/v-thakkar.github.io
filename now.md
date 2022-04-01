@@ -6,13 +6,12 @@ permalink: /now
 
 ### This page lists my current areas of focus
 
-[Last Updated: January 22, 2021]
+[Last Updated: March, 2022]
 
-- Mostly focusing on new job and related tech stuff
+- Practicing my Golang and Rust skills
 
-- Learning German
+- Setting up a new apartment and adulting hard
 
-- Setting up life in Berlin
+- Re-reading 'The Organized Mind' by Daniel Levitin (Next: Programmer's Brain)
 
-- Entangled life by Merlin Sheldrake
-
+- Trying to keep my plants alive
