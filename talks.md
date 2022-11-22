@@ -7,6 +7,9 @@ tagline: "My past speaking engagements"
 ---
 <br>
 
+#**2022**
+- September 26-28, 2018: [Developing eBPF profiler for polyglot cloud-native applications](https://lpc.events/event/16/contributions/1361/) at [Linux Plumbers Conference](https://lpc.events/) ([Video](https://youtu.be/Gr1rrSzvqfg))
+
 # **2018**
 
 - September 26-28, 2018: [From Knowing the definition of Linux Kernel to becoming a kernel hacker](https://kernel-recipes.org/en/2018/talks/from-knowing-the-definition-of-linux-kernel-to-becoming-a-kernel-hacker/) at [Kernel Recipes](https://kernel-recipes.org/en/2018/) ([Slides+Video](https://kernel-recipes.org/en/2018/talks/from-knowing-the-definition-of-linux-kernel-to-becoming-a-kernel-hacker/))
