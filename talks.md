@@ -7,8 +7,11 @@ tagline: "My past speaking engagements"
 ---
 <br>
 
+# **2023**
+- February 4-5, 2023: [Stack walking without frame pointers](https://fosdem.org/2023/schedule/event/bintools_stackunwind/) at [FOSDSEM](https://fosdem.org/2023/)
+
 # **2022**
-- September 26-28, 2018: [Developing eBPF profiler for polyglot cloud-native applications](https://lpc.events/event/16/contributions/1361/) at [Linux Plumbers Conference](https://lpc.events/) ([Video](https://youtu.be/Gr1rrSzvqfg))
+- September 26-28, 2022: [Developing eBPF profiler for polyglot cloud-native applications](https://lpc.events/event/16/contributions/1361/) at [Linux Plumbers Conference](https://lpc.events/) ([Video](https://youtu.be/Gr1rrSzvqfg))
 
 # **2018**
 
