@@ -8,6 +8,7 @@
 # Site settings
 title: Vaishali Thakkar
 email: me@vaishalithakkar.com
+description: Systems, Softwares and Life rants
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vaishalithakkar.in" # the base hostname & protocol for your site
 twitter_username: vthakkar_
