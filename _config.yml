@@ -14,6 +14,8 @@ url: "http://vaishalithakkar.in" # the base hostname & protocol for your site
 twitter_username: vthakkar_
 github_username:  v-thakkar
 linkedin_username: in/vaishali-thakkar-411b3390
+plugins: [jekyll-paginate]
+
 paginate: 5
 paginate_path: "blog/page:num/"
 theme-dark: false #Set to true to change to dark website theme

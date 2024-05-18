@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ASID Allocator and TLB management in Xen for x86</title>
+  <meta name="description" content="Recently I have been looking into changing how ASID allocator works in Xen for x86 architeture. I’ll discussthe motivation behind it in another post but this...">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Source+Sans+Pro:400,700,200,300|Josefin+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="http://localhost:4000/other/2024/05/18/asid-allocator-xen.html">
+  <link rel="alternate" type="application/rss+xml" title="Vaishali Thakkar" href="http://localhost:4000/feed.xml">
+</head>
+
+
+  <body class=" light  ">
+
+    
+<div class="wrapper">
+  <center> <a href="/index.html"><div class="site-title">   Vaishali Thakkar </div></a></center>
+</div>
+<div class="wrapper site-description">
+<center>  Systems, Softwares and Life rants </center>
+</div>
+<div class="wrapper" style="color: #aaa !important;">
+  <div class="trigger site-navigation">
+    <a class="page-link" href="/index.html">HOME </a><span class="exclamationMark">/</span>
+    <a class="page-link" href="/blog/">BLOG </a><span class="exclamationMark">/</span>
+    <a class="page-link" href="/now">NOW </a><span class="exclamationMark">/</span>
+    <a class="page-link" href="/talks">TALKS </a><span class="exclamationMark">/</span>
+    <a class="page-link" href="/contact">CONTACT </a>
+  </div>
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"><a class="post-title-link"  href="/other/2024/05/18/asid-allocator-xen.html">ASID Allocator and TLB management in Xen for x86</a></h1>
+  <center>  <p class="post-meta"><time datetime="2024-05-18T00:00:00+02:00" itemprop="datePublished">May 18, 2024</time></p>
+    
+   </center>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Recently I have been looking into changing how ASID allocator works in Xen for x86 architeture. I’ll discuss
+the motivation behind it in another post but this post is mostly my attempt at documenting how ASID allocator
+in Xen works at the moment.</p>
+
+<ul>
+  <li><strong>What is ASID(Address Space IDentifier) in the context of Xen?</strong></li>
+</ul>
+
+<p>At the Xen level, ASIDs partition the physical TLB. Currently, they’re mainly used in Xen to reduce the number
+of TLB flushes. At hardware level, AMD SVM has a real field called ASID in VMCB (Virtual Memory Control Block)
+and Intel VMX has an equivalent field called VPID.</p>
+
+<ul>
+  <li><strong>How ASIDs are generated and managed in Xen?</strong></li>
+</ul>
+
+<p>ASIDs are associated with physical CPU core in Xen. So their generation as well as management is done <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/asid.c#L49">per PCPU</a>.
+To minimize the overhead of ASID invalidation, at the time of TLB flush, ASIDs are tagged with a 64-bit
+generation. As the ASID generations are 64 bit, overflow of generations never happens in Xen. So the case of overflow is
+never optimized and rather ASID usage is simply disabled in such a case.</p>
+
+<p>The generation of ASID/VPIDs happen in xen as part of the <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/smpboot.c#L204">AP bringup</a>.
+Basically, <code class="language-plaintext highlighter-rouge">_svm_cpu_up/_vmx_cpu_up</code> are being called by their respective <code class="language-plaintext highlighter-rouge">cpu_up</code> functions to setup the hook
+in <code class="language-plaintext highlighter-rouge">hvm_function_table</code>.  In the case of AMD SVM, the range of ASID pool for each pcpu is determined by CPUID 0x8000000a[EBX].</p>
+
+<ul>
+  <li><strong>How ASIDs are assigned in Xen?</strong></li>
+</ul>
+
+<p>Currently, ASIDs are assigned in a round-robin scheme in Xen. Each time the guest’s virtual address space is
+changed, instead of flushing the TLB, new ASID is assigned to it. Which means that each time VMENTER happens,
+new ASID is being <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/asid.c#L126">assigned</a>.In Xen
+HVM, there is a vendor neutral code which handles the assignment and flushing of the ASIDs. This vendor neutral
+code is also respectively mapped to the real fields <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/svm/asid.c#L47">ASID - AMD SVM)</a>
+and <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/vmx/vmx.c#L4874">VPID - Intel VMX</a>.</p>
+
+<ul>
+  <li><strong>TLB management in Xen</strong></li>
+</ul>
+
+<p>Xen is responsible for maintaining the uniqueness and freshness of the ASID in each logical core of the machine.
+Whenever a TLB flush is needed on a pcpu, the ASID/VPID has one added to it. It’s a lazy flushing scheme which
+works by always ticking over the tag in the TLB to guarantee that it’s clean the next time you enter the VM,
+without having to do an explicit TLB invalidation.</p>
+
+<p>So currently in Xen, each vcpu of each domain(VM) has it’s own ASID which is constantly changed as part of
+VMENTER/VMRUN. Xen is responsible for enforcing TLB flushes under certain conditions. For example, when the
+recently used ASID <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/asid.c#L117">exceeds the max ASID range</a>
+on the logical core (pcpu), a complete TLB flush for all ASIDs is required. Xen decides if flushes is needed
+or not via <code class="language-plaintext highlighter-rouge">hvm_asid_handle_vmenter</code> function. In SVM and VMX code, this function can be seen to be used
+by boolean <code class="language-plaintext highlighter-rouge">need_flush</code>.</p>
+
+<p>In the case of AMD SVM, there are also TLB_CONTROL bits in TLB_CONTROL field(058h) of the VMCB which are being
+set during VMEXITs. With the different values of bits, the hardware performs one of the following operation
+on the TLB:</p>
+<ul>
+  <li>TLB_CONTROL_DO_NOTHING (00h). The hardware does nothing.</li>
+  <li>TLB_CONTROL_FLUSH_ALL_ASID (01h). The hardware flushes the entire TLB.</li>
+  <li>TLB_CONTROL_FLUSH_ASID (03h). The hardware flushes all TLB entries whose ASID is equal to the ASID in the VMCB.</li>
+  <li>TLB_CONTROL_FLUSH_ASID_LOCAL (07h). The hardware flushes this guest VM’s non-global TLB entries.</li>
+  <li>Other values. All other values are reserved, so other values may cause problems when resuming guest VMs.</li>
+</ul>
+
+<p>Xen makes use of <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/svm/asid.c#L51">FlushByASID</a>
+feature when it’s available.</p>
+
+  </div>
+
+  <footer class="postNavigation">
+  
+    <a class="postPrev" href="/other/2018/08/09/kernel-bof-at-devconf.html">
+        &laquo; Kernel BoF at Devconf.in
+    </a>
+  
+  
+  </footer>
+
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-6">
+        <span class="site-description" style="color: #111;">Website inspired from <a href="http://github.com/hemangsk/Gravity">Gravity</a>
+        </span>
+      </div>
+
+      <div class="footer-col footer-col-6 md-offset-3 footer-content" style="float:right;">
+          
+            <a href="https://github.com/v-thakkar"><span class="icon icon--github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></span></a>
+
+          
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+            <a href="https://twitter.com/vthakkar_"><span class="icon icon--twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg></span></a>
+
+          
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+            <a href="https://linkedin.com/in/vaishali-thakkar-411b3390"><span class="icon icon--linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></span></a>
+
+          
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
