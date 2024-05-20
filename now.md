@@ -6,12 +6,12 @@ permalink: /now
 
 ### This page lists my current areas of focus
 
-[Last Updated: March, 2022]
+[Last Updated: May, 2024]
 
-- Practicing my Golang and Rust skills
+- Nerding on AMD architecture and Confidential computing related advancements
 
-- Setting up a new apartment and adulting hard
+- Improving my German and very happy with it so far
 
-- Re-reading 'The Organized Mind' by Daniel Levitin (Next: Programmer's Brain)
+- Nerding on south asian history (shoutout to Brown History podcast)
 
-- Trying to keep my plants alive
+- Trying to get back into writing blogposts regularly

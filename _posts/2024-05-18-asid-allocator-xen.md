@@ -138,6 +138,6 @@ feature when it's available.
 - **Conclusion**
 
 Current ASID allocator has served us good so far. But with the advancement of Confidential Computing and modern
-hardware instructions like `TLBSYNC`/`INVLPGB`(AMD EPYC machines), presents us the opportunity to go away
+hardware instructions like `TLBSYNC`/`INVLPGB`(AMD EPYC machines), we have the opportunity to go away
 from IPI based TLB Flushing. In Xen, we have been working on adding support for AMD SEV/SEV-ES/SEV-SNP and part
 of the work is to moderize the current ASID allocator. For more on that, stay tuned :) 
