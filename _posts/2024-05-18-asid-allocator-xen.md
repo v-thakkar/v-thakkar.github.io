@@ -28,9 +28,9 @@ in `hvm_function_table`.  In the case of AMD SVM, the range of ASID pool for eac
 
 Currently, ASIDs are assigned in a round-robin scheme in Xen. Each time the guest's virtual address space is
 changed, instead of flushing the TLB, new ASID is assigned to it. Which means that each time VMENTER happens,
-new ASID is being [assigned](https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/asid.c#L126).In Xen
+new ASID is being [assigned](https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/asid.c#L126). In Xen
 HVM, there is a vendor neutral code which handles the assignment and flushing of the ASIDs. This vendor neutral
-code is then respectively mapped to the real fields [ASID - AMD SVM)](https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/svm/asid.c#L47)
+code is then respectively mapped to the real fields [ASID - AMD SVM](https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/svm/asid.c#L47)
 and [VPID - Intel VMX](https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/vmx/vmx.c#L4874).
 
 - **TLB management in Xen**

@@ -80,9 +80,9 @@ in <code class="language-plaintext highlighter-rouge">hvm_function_table</code>.
 
 <p>Currently, ASIDs are assigned in a round-robin scheme in Xen. Each time the guest’s virtual address space is
 changed, instead of flushing the TLB, new ASID is assigned to it. Which means that each time VMENTER happens,
-new ASID is being <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/asid.c#L126">assigned</a>.In Xen
+new ASID is being <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/asid.c#L126">assigned</a>. In Xen
 HVM, there is a vendor neutral code which handles the assignment and flushing of the ASIDs. This vendor neutral
-code is then respectively mapped to the real fields <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/svm/asid.c#L47">ASID - AMD SVM)</a>
+code is then respectively mapped to the real fields <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/svm/asid.c#L47">ASID - AMD SVM</a>
 and <a href="https://elixir.bootlin.com/xen/latest/source/xen/arch/x86/hvm/vmx/vmx.c#L4874">VPID - Intel VMX</a>.</p>
 
 <ul>
