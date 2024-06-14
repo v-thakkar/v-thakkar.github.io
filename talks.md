@@ -8,7 +8,7 @@ tagline: "My past speaking engagements"
 <br>
 
 # **2024**
-- June 4-6, 2023: [AMD SEV Enablement in Xen](https://sched.co/1bCFk) at Xen Summit, 2024
+- June 4-6, 2023: [AMD SEV Enablement in Xen](https://sched.co/1bCFk) at Xen Summit, 2024 ([Video](https://youtu.be/c2MHZifg0YA?si=XaD0-hv6RTy0lzOM))
 
 # **2023**
 - February 4-5, 2023: [Stack walking without frame pointers](https://fosdem.org/2023/schedule/event/bintools_stackunwind/) at [FOSDSEM](https://fosdem.org/2023/)
