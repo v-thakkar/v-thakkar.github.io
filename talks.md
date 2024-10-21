@@ -24,7 +24,7 @@ tagline: "My past speaking engagements"
 
 - August 19-20, 2017: What's up in the land of Linux kernel security? at [FrOSCon, 2017](https://www.froscon.de/en/program/)([Slides](https://github.com/v-thakkar/Talks/blob/master/FrosCon_what's_up_in_the_land_of_linux_kernel_security.pdf), [video](https://www.youtube.com/watch?v=miO-pZf3V8c))
 
-- June 9-10, 2017: Building a career in open source at [Hong Kong Open Source Conference, 2017](https://hkoscon.org/2017/)([Slides+video](https://hkoscon.org/2017/topics/building-a-career-in-open-source/)
+- June 9-10, 2017: Building a career in open source at [Hong Kong Open Source Conference, 2017](https://hkoscon.org/2017/)([Slides+video](https://hkoscon.org/2017/topics/building-a-career-in-open-source/))
 
 - March 17-19, 2017: [Coccinelle: Finding bugs in the Linux kernel](https://2017.fossasia.org/tracks.html#2847) at [FOSSASIA Summit, 2017](http://2017.fossasia.org/) ([Slides](https://github.com/v-thakkar/Talks/blob/master/FOSSASIA_Coccinelle_talk.pdf), [video](https://www.youtube.com/watch?v=2sfJ9HNlU5w))
 
