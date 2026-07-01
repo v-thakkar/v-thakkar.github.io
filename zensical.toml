@@ -312,6 +312,10 @@ link = "https://github.com/v-thakkar"
 icon = "fontawesome/brands/linkedin"
 link = "https://www.linkedin.com/in/vaishali-thakkar-411b3390/"
 
+[[project.extra.social]]
+icon = "fontawesome/brands/mastodon"
+link = "https://hachyderm.io/@vaishali"
+
 # ----------------------------------------------------------------------------
 # In this section you can configure the Markdown extensions that are used when
 # rendering your documentation. We enable the most useful extensions by default,
