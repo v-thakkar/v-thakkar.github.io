@@ -1,10 +1,18 @@
 ---
 icon: lucide/file-text
+tags:
+  - open source
+  - linux kernel
 ---
 
 # University Talks for Year 2018
 
 _February 20, 2018_
+
+<div class="post-tags post-tags--page" aria-label="Tags">
+  <span class="post-tag">open source</span>
+  <span class="post-tag">linux kernel</span>
+</div>
 
 I have been talking at conferences, meetups, and universities since the start
 of my career. I frequently get invitations from universities in India to give

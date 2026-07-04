@@ -1,10 +1,20 @@
 ---
 icon: lucide/file-text
+tags:
+  - linux kernel
+  - open source
+  - reflections
 ---
 
 # Kernel BoF at Devconf.in
 
 _August 9, 2018_
+
+<div class="post-tags post-tags--page" aria-label="Tags">
+  <span class="post-tag">linux kernel</span>
+  <span class="post-tag">open source</span>
+  <span class="post-tag">reflections</span>
+</div>
 
 I attended [Devconf.in](https://devconf.info/in) last weekend. It was a fun and
 hectic conference, meeting so many open source friends and having long

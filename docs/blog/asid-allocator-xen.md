@@ -1,10 +1,22 @@
 ---
 icon: lucide/file-text
+tags:
+  - xen
+  - linux kernel
+  - open source
+  - confidential computing
 ---
 
 # ASID Allocator and TLB management in Xen for x86
 
 _May 18, 2024_
+
+<div class="post-tags post-tags--page" aria-label="Tags">
+  <span class="post-tag">xen</span>
+  <span class="post-tag">linux kernel</span>
+  <span class="post-tag">open source</span>
+  <span class="post-tag">confidential computing</span>
+</div>
 
 Recently I have been looking into changing how the ASID allocator works in Xen
 for x86 architecture. I will discuss the motivation behind it in another post,
