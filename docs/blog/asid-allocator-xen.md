@@ -194,4 +194,8 @@ more on that, stay tuned.
     <span>Previous</span>
     <strong>&larr; Kernel BoF at Devconf.in</strong>
   </a>
+  <a class="blog-post-nav__link blog-post-nav__link--next" href="whats-in-a-surname.md">
+    <span>Next</span>
+    <strong>The Father's surname: A Default worth questioning &rarr;</strong>
+  </a>
 </nav>

@@ -15,7 +15,20 @@ icon: lucide/notebook-pen
 </div>
 
 <div class="post-grid">
-  <a class="post-card post-card--featured" href="asid-allocator-xen.md" data-tags="xen|linux kernel|open source|confidential computing">
+  <a class="post-card post-card--featured" href="whats-in-a-surname.md" data-tags="reflections">
+    <span class="post-card__date">July 11, 2026</span>
+    <strong>The Father's surname: A Default worth questioning</strong>
+    <span class="post-tags" aria-label="Tags">
+      <span class="post-tag">reflections</span>
+    </span>
+    <span>
+      As my due date creeps closer, we've started filling out the paperwork
+      that comes with having a baby in Germany. One of the routine questions
+      is the baby's surname...
+    </span>
+  </a>
+
+  <a class="post-card" href="asid-allocator-xen.md" data-tags="xen|linux kernel|open source|confidential computing">
     <span class="post-card__date">May 18, 2024</span>
     <strong>ASID Allocator and TLB management in Xen for x86</strong>
     <span class="post-tags" aria-label="Tags">
