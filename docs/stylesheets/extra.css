@@ -60,6 +60,10 @@
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
+.post-card[hidden] {
+  display: none;
+}
+
 .post-card:hover {
   color: var(--md-default-fg-color) !important;
   border-color: #0f766e;
