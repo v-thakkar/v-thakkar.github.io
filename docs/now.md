@@ -30,7 +30,7 @@ habits around complex systems.
 
 ## Life
 
-Based in Berlin with my partner, with a baby girl joining the family soon.
+Based in Berlin with my partner and our baby girl.
 
 Outside work, free time often goes into strength training, learning more about
 the science of nutrition, traveling, and occasionally practicing German or
