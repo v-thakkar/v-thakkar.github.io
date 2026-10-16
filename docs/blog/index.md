@@ -12,14 +12,16 @@ icon: lucide/notebook-pen
   <button class="post-filter__button" type="button" data-filter-tag="open source" aria-pressed="false">Open Source</button>
   <button class="post-filter__button" type="button" data-filter-tag="confidential computing" aria-pressed="false">Confidential Computing</button>
   <button class="post-filter__button" type="button" data-filter-tag="reflections" aria-pressed="false">Reflections</button>
+  <button class="post-filter__button" type="button" data-filter-tag="personal" aria-pressed="false">Personal</button>
 </div>
 
 <div class="post-grid">
-  <a class="post-card post-card--featured" href="whats-in-a-surname.md" data-tags="reflections">
+  <a class="post-card post-card--featured" href="whats-in-a-surname.md" data-tags="reflections|personal">
     <span class="post-card__date">July 11, 2026</span>
     <strong>The Father's surname: A Default worth questioning</strong>
     <span class="post-tags" aria-label="Tags">
       <span class="post-tag">reflections</span>
+      <span class="post-tag">personal</span>
     </span>
     <span>
       As my due date creeps closer, we've started filling out the paperwork

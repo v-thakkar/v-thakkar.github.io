@@ -2,6 +2,7 @@
 icon: lucide/file-text
 tags:
   - reflections
+  - personal
 ---
 
 # The Father's surname: A Default worth questioning
@@ -10,6 +11,7 @@ _July 11, 2026_
 
 <div class="post-tags post-tags--page" aria-label="Tags">
   <span class="post-tag">reflections</span>
+  <span class="post-tag">personal</span>
 </div>
 
 As my due date creeps closer, we've started filling out the paperwork that comes with having a baby in Germany. One of the routine questions is the baby's surname. Despite the surname already being written on the form, people almost instinctively refer to my partner's surname when talking to us, without even checking what we've entered. No one is trying to make a point—it's simply the default they've internalized. Those small interactions made me think about something I'd quietly taken for granted. My partner and I never really had a discussion about our child's surname—we had always assumed our child would carry both of ours. But listening to friends and family navigate the same question, I realized we still live in a culture where the father's surname is treated as the unexamined default, even when no one is consciously insisting on it.
